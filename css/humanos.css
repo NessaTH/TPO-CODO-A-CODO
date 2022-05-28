@@ -1,0 +1,52 @@
+.animate__animated.animate__pulse {
+  --animate-duration: 5s;
+  --animation-delay: 0.9s; }
+
+.miBg{
+  margin: 0;
+  padding: 0;
+}  
+
+h2 {
+  color: #207a95;
+  font-style: italic; }
+
+.titleHomeBlue {
+  color: #3f51b5;
+  font-weight: bold;
+  margin: 0.5rem;
+  font-size: 2.2rem; }
+
+h3 {
+  color: #3f51b5;
+  font-weight: bold;
+  margin: 0.5rem;
+  font-size: 1rem; }
+
+.formContacto {
+  font-family: 'Bree Serif', serif;
+  font-family: 'Castoro', serif; }
+
+.contacto {
+  text-align: center; 
+  background-color: white;
+}
+
+.contacto h1 {
+  font-size: 1.5rem; }
+
+.contacto p {
+  font-size: 1.3rem; }
+
+.misInputs {
+  width: 50%;
+  margin: 1.2rem auto;
+  padding: 1em; }
+
+.miSelector {
+  width: 50%;
+  margin: 0 auto 1.2rem auto; }
+
+
+
+

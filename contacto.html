@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta name="description" content="¡Envíanos tu mensaje, consulta o sugerencia!">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/humanos.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <header class="container-fluid miBg">
+            <nav class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#anclaComida">Comida</a></li>
+                <li><a href="#anclaRincones">Rincones</a></li>
+            </nav>
+        </header>	
+        <main class="contacto">
+            <div class="mt-5 titleHomeBlue aja">CONTÁCTANOS <i class="fas fa-envelopes-bulk"></i></div>
+            <h1 class="mt-4 mb-5">Deja tu mensaje y te responderemos pronto</h1>
+            <form class="formContacto">
+                <input type="text" class="form-control misInputs" name="nombre" id="nombre" placeholder="Ingresa tu nombre y apellido" required="">
+                <input type="email" class="form-control misInputs" name="email" id="email" placeholder="Deja tu email aquí" required="">
+                <div class="form-group miSelector">
+                    <label for="asunto-select">Elige un asunto</label>
+                    <select class="form-control" name=asunto id="asunto-select">
+                        <option value="Info" selected="">Información general</option>
+                        <option value="Colab">Colaboraciones</option>
+                        <option value="events">Eventos</option>
+                    </select>
+                </div>
+                <div class="form-group miSelector">	
+                    <textarea class="form-control" name="mensaje" placeholder="Escribe tu consulta o mensaje" required=""></textarea>
+                </div>	
+                <div class="form-check miSelector">
+                    <input class="form-check-input" type="checkbox" name="suscribe-news" id="suscribe-news">
+                    <label class="form-check-label" for="suscribe-news">Me quiero suscribir al Newsletter</label>	
+                </div>
+                <button type="submit" class="btn btn-success mr-3 mb-5 rounded-pill bgForms" name="enviar" value="ENVIAR MENSAJE" data-toggle="modal" data-target="#enviar">ENVIAR MENSAJE</button>
+                <button type="reset" class="btn btn-success mr-3 mr-lg-0 mb-5 rounded-pill bgForms" name="reestablecer" value="REESTABLECER">REESTABLECER</button>
+            </form>
+        </main>
+        <footer>
+            <nav class="nav">
+                <p>GUARA FOODIE</p>
+            </nav>
+        </footer>
+
+        <!-- ENVIAR -->
+        <div class="modal fade" id="enviar" tabindex="-1" aria-labelledby="envio" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body font-weight-bold extra__boton--spacing">
+                        ¡Tu mensaje ha sido enviado! ¡Te leeremos pronto!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info rounded-pill font-weight-bold extra__boton--spacing bgForms" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+              </div>
+        </div>	
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>	
+    </body> 
+</html>

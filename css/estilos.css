@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-image: url(../media/fondomain.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.gridPadre{
+    height: auto;
+	display: grid;
+	grid-template-areas: 
+	"nosotros"
+	"novedades"
+	"comida"
+	"rincones"
+}
+
+.cartel{
+    width: 100vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cartel img{
+    width: 80%;
+}
+
+.nosotros{
+    grid-area: nosotros;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fae52d;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    margin: auto;
+}
+
+li a{
+    text-decoration: none;
+}
+
+
+.banner{
+    width: 80vw;
+    height: 35vh;
+    background-color: aqua;
+    background-image: url(../media/foodie_inicio.jpg);
+    background-position: center;    
+}
+
+
+.novedades{
+    grid-area: novedades;
+    background-color: #e0dcdc;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.comida{
+    grid-area: comida;
+    margin-top: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+h1, h2{
+    margin-bottom: 20px;
+}
+.imgFood img{
+    width: 320px;
+	height: 220px;
+    margin-top: 5px;
+}
+
+.imgFood{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rincones{
+    grid-area: rincones;
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: #FFF08C;
+    text-align: center;
+}
+
+
+/*TABLETS*/
+@media all and (min-width: 768px){
+ 	.gridPadre{
+	grid-template-areas: 
+	"nosotros nosotros novedades"
+	"comida comida novedades"
+	"rincones rincones novedades";
+	grid-template-columns: 39% 39% 22%;
+	grid-template-rows: auto;
+}
+}		
+/*DESKTOP*/
+@media all and (min-width: 992px){
+	.gridPadre{
+	grid-template-areas: 
+	"novedades nosotros nosotros"
+	"novedades comida comida"
+	"novedades rincones rincones";
+	grid-template-columns: 22% 39% 39%;
+	grid-template-rows: auto;
+}
+}
+
+
+/*DESKTOP LARGE*/
+@media all and (min-width: 1200px){
+	.gridPadre{
+    grid-template-areas: 
+    "nosotros"
+    "novedades"
+    "comida"
+    "rincones";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.banner{
+    width: 100vw;
+}
+
+.cartel{
+    text-align: center;
+    background-color: white;
+}
+}
+
+iframe {
+    width: 100%;
+    max-width: 588px;
+    height: 250px;
+    margin: auto; }
